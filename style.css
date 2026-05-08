@@ -1,0 +1,134 @@
+/* 1. DESIGN TOKENS (Variables) */
+:root {
+    /* Colors */
+    --color-brand: #0176d3;
+    --color-success: #2e844a;
+    --color-error: #ea001e;
+    --color-neutral: #747474;
+    --color-bg-light: #f3f3f3;
+    --color-border: #dddbda;
+    
+    /* Typography Sizes */
+    --font-size-small: 0.8125rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.5rem;
+    --font-size-xlarge: 2rem;
+    
+    /* Spacing */
+    --spacing-medium: 1.5rem;
+}
+
+/* 2. BASE STYLES */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    color: #181818;
+    margin: 0;
+    background-color: white;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--spacing-medium);
+}
+
+.slds-header {
+    background-color: #032d60;
+    color: white;
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.section-title {
+    margin-top: 2rem;
+    color: var(--color-neutral);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--color-border);
+    margin: 3rem 0;
+}
+
+/* 3. COLOR SWATCHES */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.swatch-card {
+    border: 1px solid var(--color-border);
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.swatch {
+    height: 100px;
+}
+
+.bg-brand { background-color: var(--color-brand); }
+.bg-success { background-color: var(--color-success); }
+.bg-error { background-color: var(--color-error); }
+.bg-neutral { background-color: var(--color-neutral); }
+
+.swatch-info {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+}
+
+.swatch-info code {
+    display: block;
+    color: var(--color-neutral);
+    margin-top: 4px;
+}
+
+/* 4. TYPOGRAPHY UTILITIES */
+.text-heading_large { font-size: var(--font-size-xlarge); font-weight: 700; margin: 0; }
+.text-heading_medium { font-size: var(--font-size-large); font-weight: 600; margin: 0; }
+.text-body_regular { font-size: var(--font-size-medium); }
+.text-body_small { font-size: var(--font-size-small); color: var(--color-neutral); }
+
+.type-example {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-left: 4px solid var(--color-border);
+}
+
+.label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--color-neutral);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+/* 5. GENERAL UTILITIES */
+.text-align_center { text-align: center; }
+.text-color_error { color: var(--color-error); }
+.text-weight_bold { font-weight: 700; }
+.text-monospace { font-family: 'Courier New', monospace; background: #f4f4f4; padding: 2px 4px; }
+
+.utility-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.utility-table th, .utility-table td {
+    text-align: left;
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+code {
+    background: #f4f6f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: #c23934;
+}
