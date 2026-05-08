@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System Style Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts: Inter is close to the Salesforce aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <header class="slds-header">
+        <h1>Global Design System</h1>
+        <p>A utility-first style guide for web projects.</p>
+    </header>
+
+    <main class="container">
+        
+        <!-- COLORS SECTION -->
+        <section id="colors">
+            <h2 class="section-title">Color Palette</h2>
+            <div class="grid">
+                <div class="swatch-card">
+                    <div class="swatch bg-brand"></div>
+                    <div class="swatch-info"><strong>Brand Primary</strong><code>#0176d3</code></div>
+                </div>
+                <div class="swatch-card">
+                    <div class="swatch bg-success"></div>
+                    <div class="swatch-info"><strong>Success</strong><code>#2e844a</code></div>
+                </div>
+                <div class="swatch-card">
+                    <div class="swatch bg-error"></div>
+                    <div class="swatch-info"><strong>Error</strong><code>#ea001e</code></div>
+                </div>
+                <div class="swatch-card">
+                    <div class="swatch bg-neutral"></div>
+                    <div class="swatch-info"><strong>Neutral</strong><code>#747474</code></div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- TYPOGRAPHY SECTION -->
+        <section id="typography">
+            <h2 class="section-title">Typography</h2>
+            
+            <div class="type-example">
+                <span class="label">Heading Large</span>
+                <h1 class="text-heading_large">The quick brown fox jumps over the lazy dog</h1>
+            </div>
+
+            <div class="type-example">
+                <span class="label">Heading Medium</span>
+                <h2 class="text-heading_medium">The quick brown fox jumps over the lazy dog</h2>
+            </div>
+
+            <div class="type-example">
+                <span class="label">Body Default</span>
+                <p class="text-body_regular">Design systems help to document the visual vocabulary and reusable components of a large website.</p>
+            </div>
+
+            <div class="type-example">
+                <span class="label">Body Small</span>
+                <p class="text-body_small">Used for captions, metadata, and secondary information.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- UTILITIES SECTION -->
+        <section id="utilities">
+            <h2 class="section-title">Utility Classes</h2>
+            <p class="text-body_regular">Use these classes to quickly modify elements without writing new CSS.</p>
+            
+            <table class="utility-table">
+                <thead>
+                    <tr>
+                        <th>Class</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>.text-align_center</code></td>
+                        <td class="text-align_center">Centered text</td>
+                    </tr>
+                    <tr>
+                        <td><code>.text-color_error</code></td>
+                        <td class="text-color_error">Red error text</td>
+                    </tr>
+                    <tr>
+                        <td><code>.text-weight_bold</code></td>
+                        <td class="text-weight_bold">Bolded text</td>
+                    </tr>
+                    <tr>
+                        <td><code>.text-monospace</code></td>
+                        <td class="text-monospace">Monospace font family</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+</body>
+</html>
